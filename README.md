@@ -12,9 +12,9 @@
 
 ####  Front-end 
 
-const pusher = new Pusher(process.env.REACT_APP_PUSHERID, {
-      cluster: 'mt1'
-    });
+      const pusher = new Pusher(process.env.REACT_APP_PUSHERID, {
+            cluster: 'mt1'
+      });
 
     const channel = pusher.subscribe('messages');
     channel.bind('inserted', function(newMessage) {
