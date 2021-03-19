@@ -40,7 +40,6 @@ function App() {
   console.log(messages)
   return (
     <div className="app">
-      {/* <h1>My whatsapp clone</h1> */}
       <div className="app-body">
         {/* Chat component */}
         <Chatsection messages={messages}/>
